@@ -71,6 +71,7 @@ public class Class1
 	long finish = System.currentTimeMillis();
 	long totalTime = finish - start; 
 	System.out.println("Total Time for page load - "+totalTime); 
+	Thread.sleep(3000);
 	
 	//Verify the login
 	String verify_website= driver.findElement(By.xpath("//*[@id=\"post-26\"]/div[1]/div/div/div/article[1]/div/div/div/div[1]/h1")).getText();
