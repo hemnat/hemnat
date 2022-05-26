@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [TestSuite]" parallel="tests">
+  <parameter name="browser" value="IE"/>
+  <test name="IE(failed)" parallel="tests" preserve-order="true">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="Mobile.Class1">
+        <methods>
+          <include name="CrossBrowser"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Mobile.Class1 -->
+    </classes>
+  </test> <!-- IE(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
